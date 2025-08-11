@@ -30,7 +30,11 @@ function AppContent({ user, setUser }) {
         padding: (isProviderDashboard || isAuthPage) ? "0" : "0 16px" 
       }}>
         <Routes>
-          <Route path="/" element={<Dashboard />} />
+          {/* Redirect root to login if no user, otherwise to dashboard */}
+          <Route path="/" element={
+            user ? <Navigate to="/dashboard" replace /> : <Navigate to="/login" replace />
+          } />
+          <Route path="/home" element={<Dashboard />} />
           <Route path="/book" element={<BookParking />} />
           <Route path="/login" element={<Login setUser={setUser} />} />
           <Route path="/register" element={<Register setUser={setUser} />} />

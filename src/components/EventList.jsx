@@ -7,10 +7,10 @@ export default function EventList({ parking = [], events = [] }) {
       <div style={{
         textAlign: "center",
         padding: "80px 30px",
-        background: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
+        background: "linear-gradient(135deg, #676EC2 0%, #252436 100%)",
         borderRadius: "20px",
         margin: "30px 0",
-        color: "white",
+        color: "#fffff",
       }}>
         <div style={{
           fontSize: "80px",
