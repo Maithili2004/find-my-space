@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Routes, Route, Link, Navigate, useLocation } from "react-router-dom";
-import Navbar from "./components/Navbar";
+import Navbar from "./components/NavBar";
 import Dashboard from "./components/Dashboard";
 import ProviderDashboard from "./pages/ProviderDashboard";
 import BookParking from "./pages/BookParking";
